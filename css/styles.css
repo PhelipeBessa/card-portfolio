@@ -1,0 +1,82 @@
+:root{
+    --bg-primary: #A7ABB7;
+    --bg-secondary: #0D6EFD;
+    --bg-terceary: #fff;
+    --text-primary: #202124;
+    --text-secondary: #f0f0f0;
+    --color-1: #080B18;
+    --color-2: #5652A3;
+
+    --ubuntu: 'Ubuntu', sans-serif;
+    --roboto: 'Roboto Mono', monospace;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg-primary);
+    font-family: var(--roboto);
+}
+#card{
+    margin-top: 4rem;
+    height: 30rem;
+    background: var(--bg-terceary);
+    border-radius: 1rem;
+}
+#banner{
+    background: var(--bg-secondary);
+    height: 10rem;
+    margin: -1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+#bg-profile{
+    width: 10rem;
+    height: 10rem;
+    margin: -5rem auto;
+    border-radius: 5rem;
+    background: var(--bg-secondary);
+}
+#img-profile{
+    width: 9.5rem;
+    height: 9.5rem;
+    margin: .2rem .25rem;
+    border-radius: 4.75rem;
+    background: var(--bg-terceary);
+}
+#title-card{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: var(--ubuntu);
+}
+.name-card{
+    display: block;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+#social-midia{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#social-midia .ms{
+    margin-top: 1rem;
+    width: 40px;
+}
+#projects-btn{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+#credit{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+#credit a{
+    font-weight: 700;
+    color: var(--bg-secondary);
+}
+
