@@ -1,5 +1,5 @@
 :root{
-    --bg-primary: #A7ABB7;
+    --bg-primary: #F4F4F4;
     --bg-secondary: #0D6EFD;
     --bg-terceary: #fff;
     --text-primary: #202124;
@@ -24,6 +24,7 @@ body{
     height: 30rem;
     background: var(--bg-terceary);
     border-radius: 1rem;
+    box-shadow: 10px 10px 10px -5px var(--text-primary);
 }
 #banner{
     background: var(--bg-secondary);
@@ -42,8 +43,8 @@ body{
     width: 9.5rem;
     height: 9.5rem;
     margin: .2rem .25rem;
+    border: .25rem solid var(--bg-terceary);
     border-radius: 4.75rem;
-    background: var(--bg-terceary);
 }
 #title-card{
     margin-top: 5rem;
@@ -80,3 +81,37 @@ body{
     color: var(--bg-secondary);
 }
 
+@media screen and (max-width: 1200px) {
+    #credit{
+        margin-top: 23rem;
+    }
+    #social-midia{
+        gap: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #credit{
+        margin-top: 23rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        font-size: .9rem;
+    }
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #card{
+       width: 19rem;
+    }
+    #social-midia{
+        gap: .4rem;
+    }
+    #credit{
+        margin-top: 6rem;
+    }
+}
